@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,cyrillic')
+@import 'reset.css'
+@import 'bootstrap-grid.min.css'
+@import 'nib'
+@import '../stylus/variables.styl'
+@import 'sprite'
+@import 'mixins'
+@import 'media.css'
+@import 'animate.min.css'
+
+body 
+  font-family 'Roboto Slab', serif
+.year
+  background c-dark-blue
+  padding 8px 0
+  text-align right
+header
+  background url(../images/bg.jpg)
+  background-size cover
+.menu__title
+  display inline-block
+  &:last-child a 
+    padding-right 0px
+.menu__link
+  color white
+  padding 0 5px
+  font-size 12px
+  &:hover 
+    color c-red
+.menu__link_blue
+  color c-soft-blue
+.menu__link_current
+  color white
+.head 
+  height 113px
+  .container 
+    top 30px
+    position relative
+.nav 
+  text-align right
+  margin 30px 0px
+.nav__title
+  display inline-block
+  &:last-child a 
+    padding-right 0px
+.nav__link 
+  color white
+  font-size 17px
+  padding 0 18px
+  &:hover 
+    color c-soft-blue
+.nav__link_current
+  color c-red
+.logo
+  display inline-block
+  background-image: url("../images/logo.png");
+  width: 226px;
+  height: 67px;
+.header__title 
+  text-align center
+.header__title__h 
+  color c-soft-blue
+  text-transform uppercase
+  font-size 100px
+  font-weight bold
+.header__title__h_red 
+  color c-red
+.header__title_h2 
+  color white
+  font-size 36px
+  font-weight normal
+.header__title_h2_blue
+  color c-soft-blue
+.button 
+  background c-soft-blue
+  color white
+  padding 13px 40px
+  font-size 22px
+  border-radius(5px)
+  display inline-block
+  trs()
+  &:hover
+    background c-red
+    trs()
+.header__title_button
+  margin 60px 0
+.socials_bottom 
+  margin-bottom 50px
+.socials a,
+.socials li
+  display inline-block
+.socials a 
+  margin 0 10px
+.socials__facebook 
+  sprite($sprite-facebook)
+.socials__vk
+  sprite($sprite-vk)
+.socials__twitter
+  sprite($sprite-twitter)
+.socials__google
+  sprite($sprite-google)
+.section_blue 
+  background c-blue
+  padding 20px 0 40px 0
+.content-box__h, .content-box__h2 
+  color c-dark
+  font-size 44px
+  padding 60px 0 40px 0
+  text-align center
+  box-sizing border-box
+.content-box__p, .content-box__p2 
+  verdana()
+  line-height 25px
+  width 671px
+  margin 0 auto
+.content-box__p_m
+  margin-bottom 50px;
+.content-box_white 
+  background white
+  margin-top 90px
+  text-align center
+  padding-bottom 70px
+  a 
+    color c-dark
+    border-bottom 1px dotted c-dark
+    &:hover 
+      color c-red
+      border-bottom 1px dotted c-red
+.section_button 
+  display block
+  width 300px
+  margin 60px auto
+  padding 13px 0
+  border none
+  text-align center
+.section_grey 
+  background c-dark
+  color white
+  padding 20px 0 0px 0
+.link
+  color white
+  display block
+  font-size 12px
+  verdana()
+  margin-right 20px
+.contact__h
+    font-size 20px
+    font-weight normal
+    line-height 20px
+    margin 10px 0 20px 0
+.content-box__contacts
+  padding 15px 0 80px 0
+.content-box__h_white
+  color white
+.contacts_m
+  margin-top 60px
+.map-box 
+  position relative
+.map-box__adress
+  position absolute
+  top 0px
+  width 100%
+.map-box__contact
+  background rgba(255,255,255, 0.7)
+  width 366px
+  color black
+  padding 50px
+  float right
+  margin-top 76px
+.map-box__h
+  margin 0px 0 10px 0
+  font-size 27px
+.map-box__li
+  font-size 18px
+.map-box 
+  h4
+    font-size 18px
+    margin 20px 0 10px 0
+.map-box__link 
+  color black
+  display inline-block
+  margin-right 20px
+  font-size 12px
+  border-bottom 1px dotted c-dark
+  verdana()
+  &:hover 
+    hover()
+.map-box__link_current
+  hover()
+.content-box__p_white
+  background white
+  padding 20px
+  font-size 12px
+  line-height 18px
+  position relative
+  width 100%
+  &:after 
+    content ''
+    border-left 25px solid white 
+    border-top 0px solid transparent
+    border-bottom 25px solid transparent
+    display block
+    bottom -25px
+    left 0px
+    position absolute
+.content-box_m
+  width 666px 
+  margin 0 auto 50px auto
+.content-box__autor
+  display block
+  font-weight bold
+  margin 20px 0px 0px 30px
+.content-box__position
+  display block
+  font-size 13px
+  margin 0px 0px 0px 30px
+  verdana()
+.form-box__input
+  height 50px
+  margin 15px 0 35px 0
+  width 100%
+  border 3px solid white
+  display block
+  padding 0 10px
+  color c-soft-blue
+.form-box__input:focus
+  border 3px solid c-soft-blue
+  background white
+  trs()
+.form-box__input_blue
+  background c-blue
+.input_error
+  border 3px solid c-red
+  background url(../images/error.png) no-repeat center right rgb(229, 181, 198)
+label 
+  font-size 16px
+  verdana()
+  display block
+.form-box 
+  width 700px
+  margin 0 auto 40px auto
+.form-box__input_p
+  margin-bottom 0
+footer 
+  .socials 
+    display inline-block
+    vertical-align middle
+  padding 30px 0
+  verdana()
+  font-size 13px
+  a 
+    color c-soft-blue
+  li 
+    line-height 18px
+.dev 
+  margin-right 35px
+.socials__vk_black 
+  sprite($sprite-vk-black)
+.socials__facebook_black
+  sprite($sprite-fb-black)
+.socials__twitter_black
+  sprite($sprite-twitter-black)
+.right 
+  text-align right
+  margin-top 15px
+.footer__box 
+  width 700px
+  margin 0 auto
+  clearfix()
+.sticky 
+  background c-dark-blue
+  z-index 1
+  position fixed
+  width 100%
+  top 0px
+  height auto
+  .container 
+    top 0px
+  .logo 
+    background-image: url("../images/logo2.png");
+    width: 37px;
+    height: 43px;
+    margin-top 20px
+.p-top 
+  padding-top 114px
+// Forms
+.form-box
+  position relative
+.form-box__close
+  verdana()
+  font-size 12px
+  border-bottom 1px dotted c-dark
+  position absolute
+  right 30px 
+  top @right
+  &:hover 
+    hover()
+.form-box__input_text
+  height 150px
+.form-box_white
+  background white
+  padding 60px
+  width 669px
+  display none
+  .button 
+    margin 20px auto 10px auto
+    width 200px
+.form-box__text
+  padding 10px
+.form-box__h 
+  font-size 35px
+  text-align center
+  margin-bottom 40px
+  display inherit
+.active 
+  display block
+// Toggle menu 
+.sticky .toggle-menu
+  top 10px
+.toggle-menu
+  position absolute
+  z-index 200
+  background none
+  border none
+  right 10px
+  top 25px
+  display none
+.toggle-menu__sandwitch
+  width 32px
+  height 32px
+  > span
+    width 32px
+    height 3px
+    background c-soft-blue
+    border none
+    border-radius 4px
+    display block
+    position relative
+.sw-topper
+  top 5px
+  transition: transform 0.5s, top 0.2s
+  display block 
+.sw-bottom 
+  top: 10px
+  transition: transform 0.5s, top 0.2s
+  transition-delay: 0.2s, 0s 
+.sw-footer 
+  top: 15px
+  transition: all 0.5s
+  transition-delay: 0.1s 
+.toggle-menu__sandwitch.active .sw-topper 
+  background c-red
+  top: 13px
+  transform: rotate(-45deg) 
+.toggle-menu__sandwitch.active .sw-bottom 
+  background c-red
+  top: 10px
+  transform: rotate(45deg) 
+.toggle-menu__sandwitch.active .sw-footer 
+  background c-red
+  opacity: 0
+  top: 0
+  transform: rotate(180deg)
+.form-box__input_file
+  opacity 0
+  cursor pointer
+  margin 0px
+  position relative
+  top -34px
+input, textarea
+  -webkit-appearance: none;
+.file
+  position: relative;
+  top: 8px;
+  verdana()
+  font-size 14px
+  display inline-block
+  &:before
+    content ''
+    sprite($sprite-pin)
+    display inline-block
+    vertical-align middle
+    margin-right 10px
+section 
+  overflow hidden
+@media
+only screen and (-webkit-min-device-pixel-ratio:2),
+only screen and (min--moz-device-pixel-ratio:2),
+only screen and (-o-min-device-pixel-ratio:2/1),
+only screen and (min-device-pixel-ratio:2),
+only screen and (min-resolution:192dpi),
+only screen and (min-resolution:2dppx) {
+  body .logo {
+    background-image:url(../images/logo-big.png);
+    background-size:226px 67px;
+  }
+  body .sticky .logo {
+    background-image:url(../images/logo-2-big.png);
+    background-size:40px 46px;
+    height 46px 
+    width 40px
+    background-position: 0 0;
+  }
+}

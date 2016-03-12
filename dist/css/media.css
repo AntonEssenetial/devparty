@@ -1,0 +1,193 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .content-box__contacts img {
+    width: 100%;
+  }
+  .col-sm-1 {
+    overflow: hidden;
+    padding: 0;
+  }
+  body .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
+  }
+  body .fadeInUp, body .fadeOutDown {
+    -webkit-animation-name: none;
+    animation-name: none;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  body .toggle-menu {
+    display: block;
+  }
+  .col-sm-1 {
+    overflow: visible;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  body .logo {
+    background-image: url("../images/sprite.png");
+    background-position: 0 0;
+    width: 226px;
+    height: 67px;
+    margin: 0px;
+  }
+  header.active .nav {
+    display: block;
+    background: white;
+  }
+  body .nav {
+    text-align: center;
+    z-index: 111;
+    position: relative;
+    margin: 10px 0 0 0;
+    display: none;
+    padding: 12px 0;
+  }
+  header.active nav {
+    background: white;
+  }
+  body .nav__title {
+    display: block;
+  }
+  .nav .nav__link {
+    color: #333;
+    padding: 13px 0;
+    display: block;
+  }
+  .nav .nav__link_current {
+    color: #f50054;
+  }
+  h1 {
+    display: none;
+  }
+  body .header__title_h2_blue {
+    display: block;
+    color: white;
+  }
+  body .header__title_button {
+    margin: 30px 0;
+  }
+  body .content-box__p, 
+  body .content-box__p2, 
+  body .content-box_m,
+  body .form-box,
+  body .footer__box,
+  body .map-box__contact {
+    width: 100%;
+  }
+  body .content-box__h,
+  body .content-box__h2{
+    font-size: 34px;
+    padding: 20px 0 21px 0;
+  }
+  body .form-box__h {
+    font-size: 25px;
+    padding: 40px 0 0px 0;
+  }
+  body .content-box_white {
+    padding-bottom: 30px;
+  }
+  body .section_button {
+    width: 288px;
+    margin-bottom: 30px;
+  }
+  body .contacts_m {
+    margin: 0px;
+  }
+  body .content-box__contacts li {
+    margin-bottom: 30px;
+  }
+  body .form-box__input_p {
+    margin-bottom: 35px;
+  }
+  body .right {
+    text-align: left;
+  }
+  body .socials li:first-child a {
+    margin-left: 0px;
+  }
+  body .sticky .logo {
+    margin-top: 7px;
+  }
+  body .ymaps-2-1-34-map,
+  body .map-box__yandex > div,
+  body .map-box {
+    height: 570px !important;
+  }
+  body .map-box__adress {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: auto;
+    padding: 0px;
+    text-align: center;
+    bottom: 0px;
+  }
+  body .map-box__contact {
+    padding: 20px;
+    margin: 0px;
+    float:none;
+  }
+  body .map-box__adress .container {
+    background: rgba(255,255,255,0.7);
+  }
+  body .map-box__contact {
+    background: transparent;
+  }
+  body .map-box__link {
+    margin: 0 10px;
+  }
+  body .form-box_white {
+    padding: 20px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

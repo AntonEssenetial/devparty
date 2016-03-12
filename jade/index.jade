@@ -1,0 +1,245 @@
+doctype
+html
+  head 
+    title DevParty
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel="stylesheet", href="css/main.css")
+    link(rel='shortcut icon', href='favicon.png')
+  body
+    section#sect-0
+      .year
+        .container
+          .row
+            .col-lg-12
+              .menu
+                ul
+                  li.menu__title
+                    a.menu__link.menu__link_blue.menu__link_current(href="") 2016
+                  li.menu__title
+                    a.menu__link.menu__link_blue(href="") 2015
+                  li.menu__title
+                    a.menu__link.menu__link_blue(href="") 2014
+                  li.menu__title
+                    a.menu__link.menu__link_blue(href="") 2013
+      header
+        .head
+          .container
+            .row
+              button.toggle-menu
+                .toggle-menu__sandwitch
+                  span.sw-topper
+                  span.sw-bottom
+                  span.sw-footer
+              .col-md-3.col-sm-1
+                a(href="").logo
+              nav.col-md-9.col-sm-11
+                ul.nav
+                  li.nav__title
+                    a.nav__link.nav__link_current(href="#sect-0") Программа
+                  li.nav__title
+                    a.nav__link(href="#sect-1") Докладчикам
+                  li.nav__title
+                    a.nav__link(href="#sect-2") Контакты
+                  li.nav__title
+                    a.nav__link(href="#sect-3") Отзывы
+                  li.nav__title
+                    a.nav__link(href="#sect-4") Регистрация
+        .container
+          .row 
+            .col-lg-12
+              .header__title
+                h1.header__title__h Dev 
+                  span.header__title__h_red party
+                h2.header__title_h2 2 апреля в 
+                  span.header__title_h2_blue Вологде
+                a(href="").button.button_anim.header__title_button Регистрация
+                .socials.socials_bottom
+                  ul
+                    li.socials__title
+                      a.socials__facebook(href="")
+                    li.socials__title
+                      a.socials__vk(href="")
+                    li.socials__title
+                      a.socials__twitter(href="")
+                    li.socials__title
+                      a.socials__google(href="")
+    section#sect-1.section_blue
+      .container
+        .row
+          .col-lg-12
+            .content-box-2
+              h2.content-box__h2 О конференции
+              p.content-box__p2 Вас, вероятно, удивляет, почему его так странно зовут, а если вы знаете английский, то вы удивитесь еще больше. Это необыкновенное имя подарил ему Кристофер Робин. Надо вам сказать, что когда-то Кристофер Робин был знаком с одним лебедем на пруду, которого он звал Пухом. Для лебедя это было очень подходящее имя, потому что если ты зовешь лебедя громко: "Пу-ух! Пу-ух!" — а он не откликается, то ты всегда можешь сделать вид, что ты просто понарошку стрелял; а если ты звал его тихо, то все подумают, что ты просто подул себе на нос. Лебедь потом куда-то делся, а имя осталось, и Кристофер Робин решил отдать его своему медвежонку, чтобы оно не пропало зря.
+            .content-box.content-box_white
+              h2.content-box__h Программа
+              p.content-box__p Пока наполняется. Если вы хотите выступить с докладом, <br> обратитесь к 
+                a(href="") организаторам 
+                | или 
+                a(href="") заполните заявку
+            .content-box
+              h2.content-box__h Докладчикам
+              p.content-box__p.content-box__p_m Надо вам сказать, что когда-то Кристофер Робин был знаком с одним лебедем на пруду, которого он звал Пухом. Для лебедя это было очень подходящее имя, потому что если ты зовешь лебедя громко: "Пу-ух! Пу-ух!" — а он не откликается, то ты всегда можешь сделать вид, что ты просто понарошку стрелял; а если ты звал его тихо, то все подумают, что ты просто подул себе на нос. Лебедь потом куда-то делся, а имя осталось, и Кристофер Робин решил отдать его своему медвежонку, чтобы оно не пропало зря.
+            a.button.button_anim.section_button.review(href="") Зарегистрироваться
+            .form-box.form-box_white
+              span.form-box__close свренуть
+              h.form-box__h Заявка на выступление
+              form.row
+                label.col-md-12(for="") ФИО (обязательно)
+                  input.form-box__input.form-box__input_blue.input_error(type="text")
+                label.col-md-12(for="") Организация
+                  input.form-box__input.form-box__input_blue(type="text")
+                label.col-md-12(for="") Должность
+                  input.form-box__input.form-box__input_blue(type="text")
+                label.col-md-6.col-sm-6.col-xs-12(for="") Email (обязательно)
+                  input.form-box__input.form-box__input_blue.input_error(type="text")
+                label.col-md-6.col-sm-6.col-xs-12(for="") Телефон
+                  input.form-box__input.form-box__input_blue(type="text")
+                .tezis.col-md-6.col-sm-6.col-xs-12
+                  span.file Прикрепить фаил с тезисами
+                  input.form-box__input.form-box__input_blue.form-box__input_file(type="file")
+                .col-md-12.col-sm-12
+                  input.button.section_button(type="button",value='Отпарвить')
+    section#sect-2.section_grey
+      .container
+        .row
+          .col-lg-12
+            .content-box
+              h2.content-box__h.content-box__h_white Контакты
+              .content-box__contacts
+                ul.row
+                  li.col-md-3.col-sm-3
+                    .row
+                      .col-md-12.col-md-12.col-sm-12.col-xs-5
+                        img(src="images/1.png", alt="team")
+                      .col-md-12.col-md-12.col-sm-12.col-xs-7
+                        h3.contact__h Олеся <br> Воронович
+                        a.link(href="tel:+7 900 876 5432") +7 900 876 5432
+                        a.link(href="") voronovich@devparty.ru
+                  li.col-md-3.col-sm-3.contacts_m
+                    .row
+                      .col-md-12.col-md-12.col-sm-12.col-xs-5
+                        img(src="images/2.png", alt="team")
+                      .col-md-12.col-md-12.col-sm-12.col-xs-7
+                        h3.contact__h Илья <br> Севастьянов
+                        a.link(href="tel:+7 900 876 5432") +7 900 876 5432
+                        a.link(href="") voronovich@devparty.ru
+                  li.col-md-3.col-sm-3
+                    .row
+                      .col-md-12.col-md-12.col-sm-12.col-xs-5
+                        img(src="images/3.png", alt="team")
+                      .col-md-12.col-md-12.col-sm-12.col-xs-7
+                        h3.contact__h Роман <br> Оксенюк
+                        a.link(href="tel:+7 900 876 5432") +7 900 876 5432
+                        a.link(href="") voronovich@devparty.ru
+                  li.col-md-3.col-sm-3.contacts_m
+                    .row
+                      .col-md-12.col-md-12.col-sm-12.col-xs-5
+                        img(src="images/4.png", alt="team")
+                      .col-md-12.col-md-12.col-sm-12.col-xs-7
+                        h3.contact__h Олег <br> Стрекаловский
+                        a.link(href="tel:+7 900 876 5432") +7 900 876 5432
+                        a.link(href="") voronovich@devparty.ru
+      .map-box
+        .map-box__yandex
+          <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=xZsSuuzU06swnyVcq9n-WQPWMVkIoHBR&width=100%&height=444&lang=ru_RU&sourceType=constructor"></script>
+        .map-box__adress
+          .container
+            .row
+              .col-lg-12
+                .map-box__contact
+                  h3.map-box__h Место проведения
+                  ul
+                    li.map-box__li Вологда,
+                    li.map-box__li ул. Пушкинская, 25а
+                    li.map-box__li «Русский Дом», 
+                  h4 Поблизости
+                  a(href="").map-box__link.map-box__link_current Кафе
+                  a(href="").map-box__link Банкоматы
+                  a(href="").map-box__link Гостиницы
+    section#sect-3.section_blue
+      .container
+        .row
+          .col-lg-12
+            .content-box.content-box_m
+              h2.content-box__h Отзывы
+              p.content-box__p.content-box__p_white Очень понравилась организация мероприятия, интересные докладчики. Особенно понравилось про Bitrix и доклад Олеси Воронович — узнал себя в её примерах :) Жаль, не было времени сходить на обед — к последней секции уже очень хотелось есть.
+              span.content-box__autor Александр Петров,
+              span.content-box__position ведущий программист DevSoft
+            .content-box.content-box_m
+              p.content-box__p.content-box__p_white Здравствуйте. Спасибо за конференцию. Доклады сами по себе интересные, но ничего нового (наверное, к счастью для меня) я не узнал. Я понимаю, вы ориентировались на начинающих веб-разработчиков, но, даже если бы я был таковым, мне было бы скучновато. Потому что ту информацию, что озвучили на докладах, я спокойно нашёл бы в сети (а её я находил и в большом количестве). Во-вторых, ... Думаю, на этом всё. 
+              span.content-box__autor Посититель
+            .content-box.content-box_m
+              p.content-box__p.content-box__p_white Здравствуйте! Хочу сказать спасибо за такую замечательную конференцию;) Очень понравились доклады. Почерпнул для себя много нового. Так же хочу отметить нестандартность объяснения схемы работы в команде:))) Игра была очень увлекательной!!! Организаторы, молодцы! Надеюсь, что такие мероприятия станут чаще:)
+              span.content-box__autor Денис усачев
+            .content-box.content-box_m
+              p.content-box__p.content-box__p_white Очень понравилась организация мероприятия, интересные докладчики. Особенно понравилось про Bitrix и доклад Олеси Воронович — узнал себя в её примерах :) Жаль, не было времени сходить на обед — к последней секции уже очень хотелось есть.
+              span.content-box__autor Александр Петров,
+              span.content-box__position ведущий программист DevSoft
+            .content-box.content-box_m
+              p.content-box__p.content-box__p_white Здравствуйте. Спасибо за конференцию. Доклады сами по себе интересные, но ничего нового (наверное, к счастью для меня) я не узнал. Я понимаю, вы ориентировались на начинающих веб-разработчиков, но, даже если бы я был таковым, мне было бы скучновато. Потому что ту информацию, что озвучили на докладах, я спокойно нашёл бы в сети (а её я находил и в большом количестве). Во-вторых, ... Думаю, на этом всё. 
+              span.content-box__autor Посититель
+            a(href="").button.button_anim.section_button.review Написать отзыв
+            .form-box.form-box_white
+              span.form-box__close свренуть
+              h.form-box__h Написать отзыв
+              form.row
+                label.col-md-12(for="") Имя, фамилия (обязательно)
+                  input.form-box__input.form-box__input_blue.input_error(type="text")
+                label.col-md-12(for="") Текст отзыва
+                  textarea.form-box__text.form-box__input.form-box__input_text.form-box__input_blue(name="message")
+                label.col-md-6.col-sm-6.col-xs-12(for="") Email (обязательно)
+                  input.form-box__input.form-box__input_blue.input_error(type="text")
+                .col-md-12.col-sm-12
+                  input.button.section_button(type="button",value='Отпарвить')
+    section#sect-4.section_grey
+      .container
+        .row
+          .col-lg-12
+            .content-box
+              h2.content-box__h.content-box__h_white Регистрация
+            .form-box.form-box_anim
+              form.row 
+                label.col-md-6.col-sm-6(for="") Имя (обязательно)
+                  input.form-box__input.input_error(type="text")
+                label.col-md-6.col-sm-6(for="") Фамилия
+                  input.form-box__input(type="text")
+                label.col-md-12(for="") Организация
+                  input.form-box__input(type="text")
+                label.col-md-6.col-sm-6(for="") E-mail (обязательно)
+                  input.form-box__input.form-box__input_p(type="text")
+                label.col-md-6.col-sm-6(for="") Телефон
+                  input.form-box__input.form-box__input_p(type="text")
+                .col-md-12.col-sm-12
+                  input.button.button_anim.section_button(type="button",value='Зарегистрироваться')
+    footer
+      .container
+        .footer__box
+          .row
+            .col-md-6.col-sm-6
+              ul
+                li 
+                  | © Создание сайта — 
+                  a(href="") Dev Party, 
+                  | 2016  
+                li 
+                  | Дизайн — 
+                  a(href="") Круглова Ольга
+                li 
+                  | Создание сайтов — 
+                  a(href="http://new-level.by") New-level 
+                  | 2016
+            .col-md-6.col-sm-6.right
+              span.dev Dev Party в соцсетях
+              ul.socials
+                li.socials__title
+                  a.socials__vk.socials__vk_black(href="")
+                li.socials__title 
+                  a.socials__twitter.socials__twitter_black(href="")
+                li.socials__title 
+                  a.socials__facebook.socials__facebook_black(href="")
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    script(src='js/jquery.singlePageNav.min.js')
+    script(src='js/sxanimate-css.js')
+    script(src='js/waypoints.min.js')
+    script(src='js/all.js')
