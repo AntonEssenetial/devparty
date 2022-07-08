@@ -10,5 +10,3 @@ Markup of the conference site.
 * `cd devparty`
 * Run gulp `gulp`
 
-## Created by
-[Murat](https://github.com/AntonEssenetial)
